@@ -1,0 +1,16 @@
+/*import font*/
+body {
+  margin: 0;
+  padding: 0;
+  color: red;
+  background-color: black;
+  text-align: center;
+}
+
+.photo1 {
+  border: 1px solid red;
+}
+
+
+
+/*make id tags for footer elements*/
