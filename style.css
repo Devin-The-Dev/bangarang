@@ -1,16 +1,53 @@
-/*import font*/
-body {
+@import url('https://fonts.googleapis.com/css?family=Chelsea+Market');
+
+* {
   margin: 0;
   padding: 0;
   color: red;
   background-color: black;
   text-align: center;
+  font-family: 'Chelsea Market', cursive;
+}
+/*Header*/
+header {
+  position: fixed;
+  width: 100%
+  border: 1px solid red;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header p {
+  font-size: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid red;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.home, .sessions, .battles, .about {
+  display: inline-block;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/*main*/
+main {
+  padding-top: 245px;
 }
 
 .photo1 {
   border: 1px solid red;
 }
-
-
 
 /*make id tags for footer elements*/
