@@ -3,51 +3,68 @@
 * {
   margin: 0;
   padding: 0;
-  color: red;
-  background-color: black;
+  color: blue;
+  background-color: #000;
   text-align: center;
-  font-family: 'Chelsea Market', cursive;
+  font-family: sans-serif;
+  color: #CC1013;
 }
 /*Header*/
 header {
-  position: fixed;
-  width: 100%
-  border: 1px solid red;
-  background-color: black;
+  width: 100%;
+  background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-header p {
-  font-size: 60px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+header h1 {
+  font-size: 90px;
+  font-family: 'Chelsea Market', cursive, sans-serif;
+  color: #FF0000;
 }
 
-nav {
+header nav {
   display: flex;
   justify-content: center;
   width: 100%;
-  border: 1px solid red;
+  border-top: 1px solid #FF0000;
+  border-bottom: 1px solid #FF0000;
   margin: 0 auto;
   font-size: 14px;
 }
 
-.home, .sessions, .battles, .about {
+header nav span a {
   display: inline-block;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 0 100px 0 100px;
+
+  color: #CC1013;
+  text-decoration: none;
+}
+
+header nav span a:hover {
+  color: #FF0000;
+  cursor: pointer;
+  
+}
+
+header nav span a:active {
+  color: #FF0000;
 }
 
 /*main*/
-main {
-  padding-top: 245px;
-}
 
 .photo1 {
-  border: 1px solid red;
+  border-bottom: 1px solid #FF0000;
+  border-left: 1px solid #FF0000;
+  border-right: 1px solid #FF0000;
+}
+
+/* sessions page */
+
+.sessions-left {
+  text-align: left;
 }
 
 /*make id tags for footer elements*/
