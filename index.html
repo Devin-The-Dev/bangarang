@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Bangarang</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="sessions.html">
 </head>
 
@@ -13,10 +13,24 @@
     <h1>Bangarang Dance Crew</h1>
     <nav role="navigation" class="menu">
       <span class="home"><a href="index.html">Home</a></span>
-      <span class="sessions"><a href="sessions.html">Workshops</a></span>
-      <!--add cyphers, drop down-->
-      <span class="battles"><a href="#">Battles</a></span>
-      <!--add Perfomances, drop down-->
+      <span class="header sessions">
+        <div class="dropdown">
+          <button class="dropbtn">Come Learn</button>
+          <div class="dropdown-content">
+            <a href="workshops.html">Workshops</a>
+            <a href="#">Cyphers</a>
+          </div>
+        </div>
+      </span>
+      <span class="header battles">
+        <div class="dropdown">
+          <button class="dropbtn">Come Watch</button>
+          <div class="dropdown-content">
+            <a href="#">Battles</a>
+            <a href="#">Performances</a>
+          </div>
+        </div>
+      </span>
       <span class="about"><a href="#">About Us</a></span>
     </nav>
   </header>
