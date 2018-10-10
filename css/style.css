@@ -3,12 +3,12 @@
 * {
   margin: 0;
   padding: 0;
-  color: blue;
   background-color: #000;
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Chelsea Market', cursive, sans-serif;
   color: #CC1013;
 }
+
 /*Header*/
 header {
   width: 100%;
@@ -28,6 +28,7 @@ header h1 {
 header nav {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   border-top: 1px solid #FF0000;
   border-bottom: 1px solid #FF0000;
@@ -35,9 +36,12 @@ header nav {
   font-size: 14px;
 }
 
+header nav span {
+  padding: 0 5% 0 5%;
+}
+
 header nav span a {
   display: block;
-  padding: 0 100px 0 100px;
   color: #CC1013;
   text-decoration: none;
 }
@@ -57,25 +61,27 @@ header nav span a:active {
   color: #FF0000;
 }
 
-/*.header.sessions .dropdown, 
-.header.battles .dropdown {
+.header .dropdown {
   position: relative;
   display: inline-block;
 }
 
-.header.sessions .dropdown .dropdown-content, 
-.header.battles .dropdown .dropdown-content {
+.header .dropdown .dropdown-content {
   display: none;
   position: absolute;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border: 1px solid #FF0000;
+  padding: 0 5px 0 5px;
   z-index: 1;
 }
 
-.header.sessions .dropdown .dropdown:hover .dropdown-content,
-.header.battles .dropdown .dropdown:hover .dropdown-content {
+.header .dropdown:hover .dropdown-content {
   width: 100%;
   display: block;
-}*/
+}
+
+header .dropdown:hover .dropdown-content a{
+  text-align: center;
+}
 
 /*main*/
 
@@ -87,8 +93,45 @@ header nav span a:active {
 
 /* sessions page */
 
+.sessions h2 {
+  font-size: 65px;
+}
+
 .sessions-left {
-  text-align: left;
+  margin-top: 5vw;
+  display: flex;
+  width: 50%;
+  float: left;
+  flex-direction: column;
+}
+
+.sessions-left h3 {
+  padding: 1vw 0 1vw 0;
+}
+
+.sessions-left h3 #white {
+  color: #FFF;
+}
+
+.photos {
+  display: relative;
+  width: 50%;
+  float: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photos .slides {
+  width: 400px;
+  border: 1px solid #FF0000;
+}
+
+/*Cyphers page*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
 /*make id tags for footer elements*/

@@ -2,7 +2,7 @@ let slideIndex = 0;
 carousel(); //This creates the "room" for the slideshow
 
 function carousel() { //this is when you put stuff into the room
-    let i;
+    let i; //how come i is left undefined? It's undefined so we can use the same variable again multiple areas
     let x = document.getElementsByClassName("slides");
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
